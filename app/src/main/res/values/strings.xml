@@ -13,4 +13,14 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+
+    <string name="home_nama">Dimas Arestu Prasmanto</string>
+    <string name="home_universitas">Universitas Komputer Indonesia</string>
+    <string name="home_umur">20</string>
+    <string name="home_genre">Pria</string>
+    <string name="home_darah">O+</string>
+    <string name="home_hoby">Hobby</string>
+    <string name="basket">Basket</string>
+    <string name="gaming">Gaming</string>
+    <string name="anime">Watching Anime</string>
 </resources>
