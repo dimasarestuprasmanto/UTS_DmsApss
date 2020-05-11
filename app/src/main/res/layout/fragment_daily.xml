@@ -14,6 +14,7 @@
         android:layout_marginTop="24sp"
         android:weightSum="4">
         <ImageButton
+            android:id="@+id/btn_fav"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_margin="20dp"
@@ -21,8 +22,8 @@
             android:background="@drawable/btn_fav"/>
 
 
-
             <ImageButton
+                android:id="@+id/btn_friend"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="20dp"
@@ -30,6 +31,7 @@
                 android:background="@drawable/btn_friend"/>
 
         <ImageButton
+            android:id="@+id/btn_gallery"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_margin="20dp"

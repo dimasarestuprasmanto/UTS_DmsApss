@@ -7,6 +7,9 @@ Deskripsi Pengerjaan : Membuat Splash Screen, Walkthrough 3 view, Side Bar
 Tanggal Pengerjaan : 10 Mei 2020
 Deskripsi Pengerjaan : Membuat Profile, Tampilan Daily
 
+Tanggal Pengerjaan : 11 Mei 2020
+Deskripsi Pengerjaan : Membuat Daily Activity, FriendList
+
 NIM : 10117123
 NAMA : Dimas Arestu Prasmanto
 KELAS : IF4
