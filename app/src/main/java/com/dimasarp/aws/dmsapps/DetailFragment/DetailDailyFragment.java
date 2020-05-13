@@ -3,11 +3,15 @@ package com.dimasarp.aws.dmsapps.DetailFragment;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.dimasarp.aws.dmsapps.Adapter.AdapterDataDaily;
 import com.dimasarp.aws.dmsapps.Adapter.RecyclerDailyAdapter;
@@ -19,6 +23,7 @@ public class DetailDailyFragment extends Fragment {
     View view;
     RecyclerView rvDaily;
     ArrayList<ModelDaily> list;
+    Button back;
 
     public DetailDailyFragment() {
         // Required empty public constructor
@@ -34,8 +39,15 @@ public class DetailDailyFragment extends Fragment {
         list = new ArrayList<>();
         list.addAll(AdapterDataDaily.getListData());
 
+        back = view.findViewById(R.id.back);
         showRecyclerList();
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
         return view;
     }
 
@@ -46,5 +58,11 @@ public class DetailDailyFragment extends Fragment {
         rvDaily.setAdapter(listDailiy);
 
 
+    }
+
+
+
+    public void onBackPressed(){
+        getActivity().getSupportFragmentManager().popBackStack();
     }
 }

@@ -13,6 +13,7 @@
         android:orientation="vertical"
         android:layout_marginTop="24sp"
         android:weightSum="4">
+
         <ImageButton
             android:id="@+id/btn_fav"
             android:layout_width="match_parent"

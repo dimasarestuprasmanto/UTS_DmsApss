@@ -2,6 +2,7 @@ package com.dimasarp.aws.dmsapps.ui.daily;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
@@ -18,6 +19,8 @@ import android.arch.lifecycle.ViewModelProviders;
 
 import com.dimasarp.aws.dmsapps.DetailFragment.DetailDailyFragment;
 import com.dimasarp.aws.dmsapps.DetailFragment.DetailFriendListFragment;
+import com.dimasarp.aws.dmsapps.DetailFragment.DetailGalleryFragment;
+import com.dimasarp.aws.dmsapps.DetailMusicAndVideo;
 import com.dimasarp.aws.dmsapps.R;
 import com.dimasarp.aws.dmsapps.test;
 
@@ -25,8 +28,9 @@ public class DailyFragment extends Fragment {
 
     View view;
     TextView txtTitle;
-    ImageButton cvDetailDaily, cvDetailFriend;
+    ImageButton cvDetailDaily, cvDetailFriend, cvDetailGallery, cvDetailMusic;
     private DailyViewModel dailyViewModel;
+    Integer REQ_PICK_PHOTO = 1000;
 
     public DailyFragment() {
         // Required empty public constructor
@@ -39,6 +43,8 @@ public class DailyFragment extends Fragment {
 
         cvDetailDaily =view.findViewById(R.id.btn_daily);
         cvDetailFriend = view.findViewById(R.id.btn_friend);
+        cvDetailGallery = view.findViewById(R.id.btn_gallery);
+        cvDetailMusic = view.findViewById(R.id.btn_fav);
 
         cvDetailDaily.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +72,29 @@ public class DailyFragment extends Fragment {
             }
         });
 
+        cvDetailGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DetailGalleryFragment detailGalleryFragment = new DetailGalleryFragment();
+                FragmentManager managerGallery = getFragmentManager();
+                FragmentTransaction fragmentTransaction = managerGallery.beginTransaction();
+                fragmentTransaction.replace(R.id.nav_host_fragment, detailGalleryFragment, DetailFriendListFragment.class.getSimpleName());
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        cvDetailMusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), DetailMusicAndVideo.class);
+                startActivity(intent);
+            }
+        });
+
+
         return view;
     }
+
 
 }

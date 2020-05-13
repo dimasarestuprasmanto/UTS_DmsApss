@@ -10,6 +10,9 @@ Deskripsi Pengerjaan : Membuat Profile, Tampilan Daily
 Tanggal Pengerjaan : 11 Mei 2020
 Deskripsi Pengerjaan : Membuat Daily Activity, FriendList
 
+Tanggak Pengerjaan : 13 Mei 2020
+Deskripsi Pengerjaan : Membuar Gallery,Video dan Music
+
 NIM : 10117123
 NAMA : Dimas Arestu Prasmanto
 KELAS : IF4

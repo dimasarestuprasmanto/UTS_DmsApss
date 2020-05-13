@@ -1,4 +1,21 @@
 package com.dimasarp.aws.dmsapps;
+/*
+Tanggal Pengerjaan : 9 Mei 2020
+Deskripsi Pengerjaan : Membuat Splash Screen, Walkthrough 3 view, Side Bar
+
+Tanggal Pengerjaan : 10 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile, Tampilan Daily
+
+Tanggal Pengerjaan : 11 Mei 2020
+Deskripsi Pengerjaan : Membuat Daily Activity, FriendList
+
+Tanggak Pengerjaan : 13 Mei 2020
+Deskripsi Pengerjaan : Membuar Gallery,Video dan Music
+
+NIM : 10117123
+NAMA : Dimas Arestu Prasmanto
+KELAS : IF4
+ */
 
 import android.content.Intent;
 import android.os.Handler;
