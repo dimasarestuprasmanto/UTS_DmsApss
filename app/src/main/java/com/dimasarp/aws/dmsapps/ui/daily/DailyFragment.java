@@ -30,7 +30,7 @@ public class DailyFragment extends Fragment {
     TextView txtTitle;
     ImageButton cvDetailDaily, cvDetailFriend, cvDetailGallery, cvDetailMusic;
     private DailyViewModel dailyViewModel;
-    Integer REQ_PICK_PHOTO = 1000;
+
 
     public DailyFragment() {
         // Required empty public constructor

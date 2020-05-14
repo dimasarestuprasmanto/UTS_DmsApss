@@ -9,7 +9,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_profil">About Me</string>
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
@@ -23,4 +23,6 @@
     <string name="basket">Basket</string>
     <string name="gaming">Gaming</string>
     <string name="anime">Watching Anime</string>
+
+    <string name="desc_about">Dimas Apps merupakan aplikasi tentang keseharian diri, didalamnya terdapat biodata diri, aktivity sehari-hari dan gallery, aplikasi ini masih dalam versi 1.0.1</string>
 </resources>

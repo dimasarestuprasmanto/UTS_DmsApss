@@ -13,9 +13,9 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Daily Activity" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_profil"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="@string/menu_profil" />
 
     </group>
 </menu>

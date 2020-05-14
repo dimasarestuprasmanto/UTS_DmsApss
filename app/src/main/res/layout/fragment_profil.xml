@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_daily"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:alpha="0.7"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_id">
+
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profimage"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/pp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="5dp"
+                app:layout_constraintVertical_bias="0.06"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Dimas Arestu Prasmanto"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_below="@+id/profimage"/>
+
+        <TextView
+            android:id="@+id/lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pekanbaru, Indonesia"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@+id/text_home"/>
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/lokasi">
+            <ImageButton
+                android:id="@+id/fb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_marginHorizontal="12dp"
+                android:src="@drawable/fb_logo"/>
+
+            <ImageButton
+                android:id="@+id/google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:background="@null"
+                android:src="@drawable/map_logo"/>
+
+            <ImageButton
+                android:id="@+id/call"
+                android:layout_marginHorizontal="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/call_logo"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_toRightOf="@+id/gambar1"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="Age"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:layout_marginTop="24dp"
+            android:id="@+id/gambar1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/logo"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/img1" />
+        <TextView
+            android:id="@+id/detail_age"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age"
+            android:layout_toRightOf="@+id/gambar1"
+            android:layout_marginHorizontal="24dp"
+            android:text="20"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/gendre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar1"
+            android:layout_toRightOf="@+id/gambar2"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="Gendre"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:layout_marginTop="24dp"
+            android:id="@+id/gambar2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/gambar1"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/img1" />
+        <TextView
+            android:id="@+id/detail_gendre"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gendre"
+            android:layout_toRightOf="@+id/gambar2"
+            android:layout_marginHorizontal="24dp"
+            android:text="20"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/darah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar2"
+            android:layout_toRightOf="@+id/gambar3"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="Golongan Darah"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:layout_marginTop="24dp"
+            android:id="@+id/gambar3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/gambar2"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/img1" />
+        <TextView
+            android:id="@+id/detail_darah"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/darah"
+            android:layout_toRightOf="@+id/gambar3"
+            android:layout_marginHorizontal="24dp"
+            android:text="0 R+"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gambar3"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"
+            android:text="About"
+            android:textColor="@color/putih"
+            android:background="@drawable/btn_aboutme"/>
+    </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

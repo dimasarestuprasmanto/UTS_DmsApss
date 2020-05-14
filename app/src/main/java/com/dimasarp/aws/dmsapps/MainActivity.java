@@ -12,6 +12,9 @@ Deskripsi Pengerjaan : Membuat Daily Activity, FriendList
 Tanggak Pengerjaan : 13 Mei 2020
 Deskripsi Pengerjaan : Membuat Gallery,Video dan Music
 
+Tanggak Pengerjaan : 14 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile,fb,googlemaps,call
+
 NIM : 10117123
 NAMA : Dimas Arestu Prasmanto
 KELAS : IF4
@@ -48,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_daily_activity)
+                R.id.nav_home, R.id.nav_profil, R.id.nav_daily_activity)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
