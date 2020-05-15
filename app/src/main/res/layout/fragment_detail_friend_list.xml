@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/detail_freindlist"
     tools:context=".DetailFragment.DetailFriendListFragment">
 
     <RelativeLayout
@@ -27,7 +27,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="516dp"
         android:text="Friend List"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

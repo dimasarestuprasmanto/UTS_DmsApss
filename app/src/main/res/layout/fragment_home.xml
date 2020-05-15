@@ -29,7 +29,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:src="@drawable/pp"
+                android:src="@drawable/pp_home"
                 app:civ_border_color="#ffffff"
                 app:civ_border_width="2dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -45,6 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
+                android:fontFamily="@font/typo"
+                android:textColor="#4169E1"
                 android:text="Dimas Arestu Prasmanto"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -56,16 +58,15 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/typo"
+                android:textColor="#4169E1"
                 android:text="@string/home_universitas"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.045"
-                app:layout_constraintStart_toEndOf="@+id/imageView6"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_home"
+                android:layout_marginBottom="50dp"/>
 
 
         </LinearLayout>
@@ -101,7 +102,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:textSize="24sp"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/typo"
                         android:textColor="#ffffff"
                         android:text="@string/home_umur"/>
 
@@ -124,7 +126,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#FFFFFF"
-                        android:textSize="24dp"
+                        android:textSize="22dp"
+                        android:fontFamily="@font/typo"
                         android:textStyle="bold"
                         android:text="@string/home_genre"/>
 
@@ -146,7 +149,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#FFFFFF"
-                        android:textSize="24dp"
+                        android:textSize="22dp"
+                        android:fontFamily="@font/typo"
                         android:textStyle="bold"
                         android:text="@string/home_darah"/>
 
@@ -166,7 +170,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/atas"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#F5F5F5">
         <TextView
             android:id="@+id/hobi"
             android:layout_below="@+id/card_id"
@@ -176,22 +181,28 @@
             android:layout_marginTop="70dp"
             android:textSize="24dp"
             android:textStyle="bold"
+            android:fontFamily="@font/falls"
+            android:textColor="#1E90FF"
             android:text="@string/home_hoby" />
 
+
         <LinearLayout
+            android:background="@drawable/bg_home_interest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/hobi"
-            android:layout_margin="24dp"
+            android:layout_marginTop="9dp"
+            android:paddingVertical="9dp"
             android:orientation="horizontal"
             android:weightSum="3"
             android:id="@+id/detail_hobi">
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingHorizontal="13dp"
+                android:paddingHorizontal="10dp"
                 android:gravity="center">
 
                 <ImageView
@@ -203,7 +214,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
-                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/falls"
+                    android:textColor="#1E90FF"
                     android:text="@string/basket"/>
 
             </LinearLayout>
@@ -224,8 +238,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="19sp"
-                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/falls"
+                    android:textColor="#1E90FF"
                     android:text="@string/gaming"/>
 
             </LinearLayout>
@@ -246,9 +263,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:textSize="14sp"
-                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/falls"
+                    android:textColor="#1E90FF"
                     android:text="@string/anime"/>
 
             </LinearLayout>
@@ -261,163 +280,226 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
-
+            android:layout_marginTop="24dp"
             android:textSize="24dp"
             android:textStyle="bold"
-            android:text="Makes/Mikes" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/makes"
-            android:orientation="horizontal"
-            android:layout_margin="24dp"
-            android:id="@+id/detail_makes">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingHorizontal="13dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="42dp"
-                    android:layout_height="42dp"
-                    android:src="@drawable/ayam"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:textColor="#000000"
-                    android:text="Ayam Goreng"/>
-
-            </LinearLayout>
+            android:text="MAKES AND MIKES"
+            android:textColor="#1E90FF"
+            android:fontFamily="@font/falls"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingHorizontal="18dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="42dp"
-                    android:layout_height="42dp"
-                    android:src="@drawable/kopi"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:textColor="#000000"
-                    android:text="Ice Coffee"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/ambition"
-            android:layout_below="@+id/detail_makes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            android:text="Interest" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ambition"
-            android:orientation="horizontal"
-            android:layout_margin="24dp"
-            android:id="@+id/detail_ambition">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingHorizontal="13dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="42dp"
-                    android:layout_height="42dp"
-                    android:src="@drawable/progaming"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:textColor="#000000"
-                    android:text="Programing"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingHorizontal="18dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="42dp"
-                    android:layout_height="42dp"
-                    android:src="@drawable/pc"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:textColor="#000000"
-                    android:text="Computer"/>
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-            <TextView
-                android:id="@+id/cc"
-                android:layout_below="@+id/detail_ambition"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:textSize="24dp"
-                android:textStyle="bold"
-                android:text="Ambition" />
-            <LinearLayout
+                android:background="@drawable/bg_home_interest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cc"
+                android:layout_below="@+id/makes"
+                android:layout_marginTop="9dp"
+                android:paddingVertical="9dp"
                 android:orientation="horizontal"
-                android:layout_margin="24dp"
-                android:id="@+id/cita-cita">
+                android:weightSum="2"
+                android:id="@+id/detail_makes">
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:paddingHorizontal="13dp"
+                    android:paddingHorizontal="10dp"
                     android:gravity="center">
 
                     <ImageView
                         android:layout_width="42dp"
                         android:layout_height="42dp"
-                        android:src="@drawable/progaming"/>
+                        android:src="@drawable/ayam"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="24sp"
-                        android:textColor="#000000"
-                        android:text="Programing"/>
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/falls"
+                        android:textColor="#1E90FF"
+                        android:text="FRIED CHICKEN"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="18dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/coffee"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/falls"
+                        android:textColor="#1E90FF"
+                        android:text="ICE COFFEE"/>
 
                 </LinearLayout>
 
 
-        </LinearLayout>
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/interest"
+            android:layout_below="@+id/detail_makes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:textSize="24dp"
+            android:text="INTEREST"
+            android:textStyle="bold"
+            android:textColor="#1E90FF"
+            android:fontFamily="@font/falls"/>
+
+            <LinearLayout
+                android:background="@drawable/bg_home_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/interest"
+                android:layout_marginTop="9dp"
+                android:paddingVertical="9dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:id="@+id/detail_intrest">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/code"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/falls"
+                        android:textColor="#1E90FF"
+                        android:text="PROGRAMING"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="18dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/pc"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/falls"
+                        android:textColor="#1E90FF"
+                        android:text="PC"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="18dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/anime"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/falls"
+                        android:textColor="#1E90FF"
+                        android:text="ANIME"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ambition"
+                android:layout_below="@+id/detail_ambition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:textSize="24dp"
+                android:text="AMBITION"
+                android:textStyle="bold"
+                android:textColor="#1E90FF"
+                android:fontFamily="@font/falls"/>
+            <LinearLayout
+                android:background="@drawable/bg_home_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ambition"
+                android:layout_marginTop="9dp"
+                android:paddingVertical="9dp"
+                android:orientation="horizontal"
+                android:id="@+id/detail_ambition">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/developer"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/falls"
+                        android:textColor="#1E90FF"
+                        android:text="GAME DEVELOPER"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
         </LinearLayout>
         </ScrollView>
 

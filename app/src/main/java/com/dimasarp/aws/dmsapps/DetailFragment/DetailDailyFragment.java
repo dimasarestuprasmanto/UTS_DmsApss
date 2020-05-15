@@ -1,5 +1,27 @@
 package com.dimasarp.aws.dmsapps.DetailFragment;
+/*
+Tanggal Pengerjaan : 9 Mei 2020
+Deskripsi Pengerjaan : Membuat Splash Screen, Walkthrough 3 view, Side Bar
 
+Tanggal Pengerjaan : 10 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile, Tampilan Daily
+
+Tanggal Pengerjaan : 11 Mei 2020
+Deskripsi Pengerjaan : Membuat Daily Activity, FriendList
+
+Tanggak Pengerjaan : 13 Mei 2020
+Deskripsi Pengerjaan : Membuat Gallery,Video dan Music
+
+Tanggak Pengerjaan : 14 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile,fb,googlemaps,call
+
+Tanggak Pengerjaan : 15 Mei 2020
+Deskripsi Pengerjaan : Memperbagus semua tampilan, mengisi data dummy/hardcore sesuai reality
+
+NIM : 10117123
+NAMA : Dimas Arestu Prasmanto
+KELAS : IF4
+ */
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -23,7 +45,6 @@ public class DetailDailyFragment extends Fragment {
     View view;
     RecyclerView rvDaily;
     ArrayList<ModelDaily> list;
-    Button back;
 
     public DetailDailyFragment() {
         // Required empty public constructor
@@ -39,15 +60,9 @@ public class DetailDailyFragment extends Fragment {
         list = new ArrayList<>();
         list.addAll(AdapterDataDaily.getListData());
 
-        back = view.findViewById(R.id.back);
+
         showRecyclerList();
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
         return view;
     }
 
@@ -60,9 +75,4 @@ public class DetailDailyFragment extends Fragment {
 
     }
 
-
-
-    public void onBackPressed(){
-        getActivity().getSupportFragmentManager().popBackStack();
-    }
 }

@@ -1,5 +1,27 @@
 package com.dimasarp.aws.dmsapps.Adapter;
+/*
+Tanggal Pengerjaan : 9 Mei 2020
+Deskripsi Pengerjaan : Membuat Splash Screen, Walkthrough 3 view, Side Bar
 
+Tanggal Pengerjaan : 10 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile, Tampilan Daily
+
+Tanggal Pengerjaan : 11 Mei 2020
+Deskripsi Pengerjaan : Membuat Daily Activity, FriendList
+
+Tanggak Pengerjaan : 13 Mei 2020
+Deskripsi Pengerjaan : Membuat Gallery,Video dan Music
+
+Tanggak Pengerjaan : 14 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile,fb,googlemaps,call
+
+Tanggak Pengerjaan : 15 Mei 2020
+Deskripsi Pengerjaan : Memperbagus semua tampilan, mengisi data dummy/hardcore sesuai reality
+
+NIM : 10117123
+NAMA : Dimas Arestu Prasmanto
+KELAS : IF4
+ */
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -43,8 +65,6 @@ public class RecyclerFriendAdapter extends RecyclerView.Adapter<RecyclerFriendAd
         friendViewHolder.txtNama.setText(getListFriend().get(i).getNama());
         friendViewHolder.txtUmur.setText(getListFriend().get(i).getUmur());
         friendViewHolder.txtPekerjaan.setText(getListFriend().get(i).getPekerjaan());
-        friendViewHolder.txtTelepon.setText(getListFriend().get(i).getTelepon());
-        friendViewHolder.txtEmail.setText(getListFriend().get(i).getEmail());
     }
 
     @Override
@@ -54,7 +74,7 @@ public class RecyclerFriendAdapter extends RecyclerView.Adapter<RecyclerFriendAd
 
     class FriendViewHolder extends RecyclerView.ViewHolder {
         ImageView imgFriend;
-        TextView txtNama, txtUmur, txtPekerjaan, txtTelepon, txtEmail;
+        TextView txtNama, txtUmur, txtPekerjaan;
 
         public FriendViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -62,8 +82,6 @@ public class RecyclerFriendAdapter extends RecyclerView.Adapter<RecyclerFriendAd
             txtNama = itemView.findViewById(R.id.txt_nama_friend);
             txtUmur = itemView.findViewById(R.id.txt_umur_friend);
             txtPekerjaan = itemView.findViewById(R.id.txt_pekerjaan_friend);
-            txtTelepon = itemView.findViewById(R.id.txt_telpon_friend);
-            txtEmail = itemView.findViewById(R.id.txt_email_friend);
         }
     }
 }

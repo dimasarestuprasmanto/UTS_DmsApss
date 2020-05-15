@@ -18,11 +18,11 @@
     <string name="home_universitas">Universitas Komputer Indonesia</string>
     <string name="home_umur">20</string>
     <string name="home_genre">Pria</string>
-    <string name="home_darah">O+</string>
-    <string name="home_hoby">Hobby</string>
-    <string name="basket">Basket</string>
-    <string name="gaming">Gaming</string>
-    <string name="anime">Watching Anime</string>
+    <string name="home_darah">O Plus</string>
+    <string name="home_hoby">HOBBY</string>
+    <string name="basket">BASKET</string>
+    <string name="gaming">GAMING</string>
+    <string name="anime">MOVIE</string>
 
     <string name="desc_about">Dimas Apps merupakan aplikasi tentang keseharian diri, didalamnya terdapat biodata diri, aktivity sehari-hari dan gallery, aplikasi ini masih dalam versi 1.0.1</string>
 </resources>

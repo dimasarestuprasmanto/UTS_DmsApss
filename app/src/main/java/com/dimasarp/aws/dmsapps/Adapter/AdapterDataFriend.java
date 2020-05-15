@@ -1,16 +1,37 @@
 package com.dimasarp.aws.dmsapps.Adapter;
+/*
+Tanggal Pengerjaan : 9 Mei 2020
+Deskripsi Pengerjaan : Membuat Splash Screen, Walkthrough 3 view, Side Bar
 
+Tanggal Pengerjaan : 10 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile, Tampilan Daily
+
+Tanggal Pengerjaan : 11 Mei 2020
+Deskripsi Pengerjaan : Membuat Daily Activity, FriendList
+
+Tanggak Pengerjaan : 13 Mei 2020
+Deskripsi Pengerjaan : Membuat Gallery,Video dan Music
+
+Tanggak Pengerjaan : 14 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile,fb,googlemaps,call
+
+Tanggak Pengerjaan : 15 Mei 2020
+Deskripsi Pengerjaan : Memperbagus semua tampilan, mengisi data dummy/hardcore sesuai reality
+
+NIM : 10117123
+NAMA : Dimas Arestu Prasmanto
+KELAS : IF4
+ */
 import com.dimasarp.aws.dmsapps.Model.ModelFriendList;
 import com.dimasarp.aws.dmsapps.R;
 import java.util.ArrayList;
 
 public class AdapterDataFriend {
     public static String[][] data = new String[][]{
-            {String.valueOf(R.drawable.bg_daily),"Sugiyanto","45 Tahun","Wiraswasta","0857148238","sugiantoapih@yahoo.com"},
-            {String.valueOf(R.drawable.bg_daily),"Rosani","43 Tahun","Wiraswasta","0850148238","rosani06@gmail.com"},
-            {String.valueOf(R.drawable.bg_daily),"Sutantio","21 Tahun","Mahasiswa","08956248238","sutantiogaming@gmail.com"},
-            {String.valueOf(R.drawable.bg_daily),"Fanny Murty","19 Tahun","Mahasiswa","089571482328","fannymurty@gmail.com"},
-            {String.valueOf(R.drawable.bg_daily),"Alifsar","19 Tahun","Mahasiswa","089231482328","alifsarmorang@gmail.com"},
+            {String.valueOf(R.drawable.friend_1),"Ananda Marwanaya Putra","20 Tahun", "Mahasiswa"},
+            {String.valueOf(R.drawable.friend_2),"Ari Sumardi","20 Tahun", "Mahasiswa"},
+            {String.valueOf(R.drawable.friend_3),"Muhammad Farhan","20 Tahun", "Mahasiswa"},
+            {String.valueOf(R.drawable.friend_4),"M. Nizar","20 Tahun", "Mahasiswa"}
     };
 
     public static ArrayList<ModelFriendList> getListDataFriend() {
@@ -22,8 +43,6 @@ public class AdapterDataFriend {
             modelFriend.setNama(data[i][1]);
             modelFriend.setUmur(data[i][2]);
             modelFriend.setPekerjaan(data[i][3]);
-            modelFriend.setTelepon(data[i][4]);
-            modelFriend.setEmail(data[i][5]);
             listFriend.add(modelFriend);
 
         }

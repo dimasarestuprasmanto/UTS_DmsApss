@@ -15,6 +15,9 @@ Deskripsi Pengerjaan : Membuat Gallery,Video dan Music
 Tanggak Pengerjaan : 14 Mei 2020
 Deskripsi Pengerjaan : Membuat Profile,fb,googlemaps,call
 
+Tanggak Pengerjaan : 15 Mei 2020
+Deskripsi Pengerjaan : Memperbagus semua tampilan, mengisi data dummy/hardcore sesuai reality
+
 NIM : 10117123
 NAMA : Dimas Arestu Prasmanto
 KELAS : IF4

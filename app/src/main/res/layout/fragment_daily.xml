@@ -15,21 +15,21 @@
         android:weightSum="4">
 
         <ImageButton
-            android:id="@+id/btn_fav"
+            android:id="@+id/btn_daily"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:background="@drawable/custom_btn_daily" />
+
+        <ImageButton
+            android:id="@+id/btn_friend"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_fav"/>
+            android:background="@drawable/custom_btn_friend"/>
 
-
-            <ImageButton
-                android:id="@+id/btn_friend"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_margin="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/btn_friend"/>
 
         <ImageButton
             android:id="@+id/btn_gallery"
@@ -37,15 +37,19 @@
             android:layout_height="0dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_galerry"/>
+            android:background="@drawable/custom_btn_gallery"/>
 
         <ImageButton
-            android:id="@+id/btn_daily"
+            android:id="@+id/btn_fav"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:layout_margin="20dp"
-            android:background="@drawable/btn_daily" />
+            android:layout_weight="1"
+            android:background="@drawable/custom_btn_fav"/>
+
+
+
+
 
 
     </LinearLayout>

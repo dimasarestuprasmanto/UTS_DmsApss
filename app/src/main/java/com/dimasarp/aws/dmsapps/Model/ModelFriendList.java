@@ -1,5 +1,27 @@
 package com.dimasarp.aws.dmsapps.Model;
+/*
+Tanggal Pengerjaan : 9 Mei 2020
+Deskripsi Pengerjaan : Membuat Splash Screen, Walkthrough 3 view, Side Bar
 
+Tanggal Pengerjaan : 10 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile, Tampilan Daily
+
+Tanggal Pengerjaan : 11 Mei 2020
+Deskripsi Pengerjaan : Membuat Daily Activity, FriendList
+
+Tanggak Pengerjaan : 13 Mei 2020
+Deskripsi Pengerjaan : Membuat Gallery,Video dan Music
+
+Tanggak Pengerjaan : 14 Mei 2020
+Deskripsi Pengerjaan : Membuat Profile,fb,googlemaps,call
+
+Tanggak Pengerjaan : 15 Mei 2020
+Deskripsi Pengerjaan : Memperbagus semua tampilan, mengisi data dummy/hardcore sesuai reality
+
+NIM : 10117123
+NAMA : Dimas Arestu Prasmanto
+KELAS : IF4
+ */
 public class ModelFriendList {
     String nama,umur,pekerjaan,telepon,email;
     int foto;
@@ -37,21 +59,5 @@ public class ModelFriendList {
 
     public void setPekerjaan(String pekerjaan) {
         this.pekerjaan = pekerjaan;
-    }
-
-    public String getTelepon() {
-        return telepon;
-    }
-
-    public void setTelepon(String telepon) {
-        this.telepon = telepon;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }
